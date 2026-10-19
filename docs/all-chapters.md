@@ -75,7 +75,7 @@ description: 保研经验帖 8 章 89 篇完整篇目一览
 - [504 预推免流程与考核特点](/ch05-xialingying-yutuimian/504-yutuimian-kaohe) — 各校预推免的形式、权重与真题风格
 - [505 和目标院校的博士生聊什么](/ch05-xialingying-yutuimian/505-boshi-sheng-goutong) — 从在读博士生获取真实信息的问法
 - [506 多场面试的时间与精力分配](/ch05-xialingying-yutuimian/506-duo-chang-mianshi-fenpei) — 面试扎堆时的取舍与恢复
-- [507 "捡漏"与候补策略](/ch05-xialingying-yutuimian/507-lanlu-xiangmu) — 低竞争项目的特点与风险
+- [507 「捡漏」与候补策略](/ch05-xialingying-yutuimian/507-lanlu-xiangmu) — 低竞争项目的特点与风险
 - [508 参营记录模板](/ch05-xialingying-yutuimian/508-canying-jilu) — 一场营期该记录什么、复盘什么
 
 ## [第六章 面试题库与技巧](/ch06-mianshi-tiku/)

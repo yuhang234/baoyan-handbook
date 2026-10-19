@@ -2,28 +2,6 @@ import { defineConfig } from 'vitepress'
 import fs from 'node:fs'
 import path from 'node:path'
 
-// Patch 507 YAML issue without modifying docs/ file on disk (per constraint: do not modify existing docs)
-const origReadFileSync = fs.readFileSync
-// @ts-ignore
-fs.readFileSync = function (p: any, opt: any) {
-  const res = origReadFileSync.apply(this, arguments as any)
-  if (typeof p === 'string' && p.endsWith('507-lanlu-xiangmu.md') && typeof res === 'string') {
-    return res.replace('title: "捡漏"与候补策略', 'title: \'"捡漏"与候补策略\'')
-  }
-  return res
-}
-if (fs.promises?.readFile) {
-  const origReadFile = fs.promises.readFile
-  // @ts-ignore
-  fs.promises.readFile = async function (p: any, opt: any) {
-    const res = await origReadFile.apply(this, arguments as any)
-    if (typeof p === 'string' && p.endsWith('507-lanlu-xiangmu.md') && typeof res === 'string') {
-      return res.replace('title: "捡漏"与候补策略', 'title: \'"捡漏"与候补策略\'')
-    }
-    return res
-  }
-}
-
 const CHAPTERS_INFO = [
   {
     slug: 'ch01-renshi-baoyan',
@@ -146,20 +124,6 @@ export default defineConfig({
 
   sitemap: {
     hostname: 'https://yuhang234.github.io/baoyan-handbook/',
-  },
-
-  vite: {
-    plugins: [
-      {
-        name: 'patch-507-frontmatter',
-        enforce: 'pre',
-        transform(code, id) {
-          if (id.endsWith('507-lanlu-xiangmu.md')) {
-            return code.replace('title: "捡漏"与候补策略', 'title: \'"捡漏"与候补策略\'')
-          }
-        },
-      },
-    ],
   },
 
   themeConfig: {
