@@ -1,0 +1,336 @@
+/**
+ * Custom styling for 保研经验帖
+ * Typography, Cards, Tags, Chapter Banners, and Layout per DESIGN.md
+ */
+
+/* Content width */
+@media (min-width: 960px) {
+  .VPDoc.has-aside .content-container,
+  .VPDoc:not(.has-sidebar) .content-container {
+    max-width: var(--bh-content-width) !important;
+  }
+}
+
+/* Base typography */
+.vp-doc {
+  font-family: var(--bh-font-sans);
+  font-size: var(--bh-text-size);
+  line-height: var(--bh-text-lh);
+  color: var(--bh-text);
+}
+
+.vp-doc h1 {
+  font-size: 26px !important;
+  font-weight: 600 !important;
+  margin-top: 0 !important;
+  margin-bottom: 24px !important;
+  letter-spacing: normal !important;
+}
+
+.vp-doc h2 {
+  font-size: 21px !important;
+  font-weight: 600 !important;
+  margin-top: 40px !important;
+  margin-bottom: 16px !important;
+  padding-bottom: 8px !important;
+  border-bottom: 1px solid var(--bh-border) !important;
+  letter-spacing: normal !important;
+}
+
+.vp-doc h3 {
+  font-size: 17.5px !important;
+  font-weight: 600 !important;
+  margin-top: 28px !important;
+  margin-bottom: 12px !important;
+  letter-spacing: normal !important;
+}
+
+.vp-doc p {
+  font-size: var(--bh-text-size);
+  line-height: var(--bh-text-lh);
+  margin: 16px 0;
+  letter-spacing: normal;
+}
+
+.vp-doc a {
+  color: var(--bh-accent);
+  text-decoration: none;
+}
+
+.vp-doc a:hover {
+  text-decoration: underline;
+}
+
+.vp-doc blockquote {
+  border-left: 3px solid var(--bh-accent) !important;
+  background-color: var(--bh-bg-soft) !important;
+  border-radius: 0 var(--bh-radius-md) var(--bh-radius-md) 0 !important;
+  padding: 12px 16px !important;
+  margin: 16px 0 !important;
+  color: var(--bh-text) !important;
+}
+
+.vp-doc table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.vp-doc table th {
+  background-color: var(--bh-bg-soft);
+  padding: 12px;
+  border: 1px solid var(--bh-border);
+  font-weight: 600;
+  text-align: left;
+}
+
+.vp-doc table td {
+  padding: 12px;
+  border: 1px solid var(--bh-border);
+}
+
+.vp-doc code:not(pre code) {
+  border-radius: var(--bh-radius-sm);
+  font-size: 0.875em;
+  padding: 2px 6px;
+  background-color: var(--bh-bg-muted);
+  color: var(--bh-text);
+  font-family: var(--bh-font-mono);
+}
+
+.vp-doc div[class*='language-'] {
+  border-radius: var(--bh-radius-md) !important;
+  border: 1px solid var(--bh-border) !important;
+}
+
+/* Sidebar item & subtitle */
+.bh-sidebar-subtitle {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  color: var(--bh-text-2);
+  line-height: 1.4;
+  margin-top: 3px;
+}
+
+@media (max-width: 960px) {
+  .bh-sidebar-subtitle {
+    display: none;
+  }
+}
+
+.VPSidebarItem.level-0.is-active > .item .link > .text,
+.VPSidebarItem.level-1.is-active > .item .link > .text {
+  color: var(--bh-accent) !important;
+  font-weight: 600 !important;
+}
+
+.VPSidebarItem.level-1.is-active > .item > .indicator {
+  background-color: var(--bh-accent) !important;
+  width: 2px !important;
+}
+
+/* Tags / Badges */
+.bh-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 13.5px;
+  line-height: 1.4;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.bh-tag-synthesis {
+  color: var(--bh-tag-synthesis-fg);
+  background-color: var(--bh-tag-synthesis-bg);
+}
+
+.bh-tag-experience {
+  color: var(--bh-tag-experience-fg);
+  background-color: var(--bh-tag-experience-bg);
+}
+
+.bh-tag-mixed {
+  color: var(--bh-tag-mixed-fg);
+  background-color: var(--bh-tag-mixed-bg);
+}
+
+/* Article Meta Bar */
+.bh-article-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 13.5px;
+  color: var(--bh-text-2);
+}
+
+.bh-meta-chapter {
+  color: var(--bh-text-2);
+  font-weight: 500;
+}
+
+/* Chapter Landing Layout */
+.is-chapter-landing .vp-doc h1 {
+  display: none !important;
+}
+
+.is-chapter-landing .vp-doc ul {
+  display: none !important;
+}
+
+.is-chapter-landing .VPDocAside,
+.is-chapter-landing .aside {
+  display: none !important;
+}
+
+.is-chapter-landing .VPDoc.has-aside .content-container {
+  max-width: var(--bh-content-width) !important;
+}
+
+/* Chapter Banner */
+.bh-chapter-banner {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--bh-bg-soft);
+  border: 1px solid var(--bh-border);
+  border-left: 4px solid var(--bh-accent);
+  border-radius: var(--bh-radius-lg);
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bh-banner-num {
+  font-size: 13.5px;
+  color: var(--bh-text-2);
+  margin-bottom: 4px;
+}
+
+.bh-banner-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--bh-text);
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.bh-banner-sub {
+  font-size: 13.5px;
+  color: var(--bh-text-2);
+  line-height: 1.5;
+}
+
+/* Chapter Cards Grid */
+.bh-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 28px 0 36px;
+}
+
+@media (max-width: 768px) {
+  .bh-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bh-card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--bh-bg-soft);
+  border: 1px solid var(--bh-border);
+  border-radius: var(--bh-radius-md);
+  padding: 16px 20px;
+  text-decoration: none !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  min-height: 110px;
+}
+
+.bh-card-item:hover {
+  border-color: var(--bh-accent);
+  box-shadow: var(--bh-shadow-card);
+  text-decoration: none !important;
+}
+
+.bh-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--bh-text);
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.bh-card-desc {
+  font-size: 13.5px;
+  color: var(--bh-text-2);
+  line-height: 1.5;
+  margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+
+.bh-card-footer {
+  display: flex;
+  align-items: center;
+}
+
+/* Homepage Catalog Banner */
+.bh-catalog-entry-container {
+  max-width: 1152px;
+  margin: 32px auto 0;
+  padding: 0 24px;
+}
+
+.bh-catalog-entry-link {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--bh-bg-soft);
+  border: 1px solid var(--bh-border);
+  border-radius: var(--bh-radius-md);
+  padding: 18px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--bh-accent) !important;
+  text-decoration: none !important;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.bh-catalog-entry-link:hover {
+  border-color: var(--bh-accent);
+  box-shadow: var(--bh-shadow-card);
+  text-decoration: none !important;
+}
+
+/* Homepage Hero & Features styling per DESIGN.md */
+.VPFeature {
+  background-color: var(--bh-bg-soft) !important;
+  border: 1px solid var(--bh-border) !important;
+  border-radius: var(--bh-radius-md) !important;
+  transition: border-color 0.2s, box-shadow 0.2s !important;
+}
+
+.VPFeature:hover {
+  border-color: var(--bh-accent) !important;
+  box-shadow: var(--bh-shadow-card) !important;
+}
+
+.VPHero .name {
+  font-size: 32px !important;
+  line-height: 1.3 !important;
+}
+
+.VPHero .tagline {
+  font-size: 16px !important;
+  color: var(--bh-text-2) !important;
+  line-height: 1.6 !important;
+}
