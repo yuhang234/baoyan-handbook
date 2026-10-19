@@ -17,3 +17,11 @@ order: 600
 - [607 计算机组成原理面试题](607-zucheng-yuanli.md) — 存储层次、流水线、补码浮点的机制题
 - [608 数据库面试题](608-shujuku.md) — 事务隔离与 B+ 树索引的必考双连
 - [609 编译原理面试题](609-bianyiyuanli.md) — 编译阶段、DFA/NFA 与 LL/LR 的差异化科目
+- [610 数学面试题](610-shuxue-mianshi.md) — 高数、线代、概率、离散的定义与连接题骨架
+- [611 机试指南](611-jishi-zhinan.md) — ACM 模式、考点分级与输入输出坑
+- [612 AI/机器学习面试高频题](612-ai-mianshi-gaopin.md) — 从基础概念到工程实践的五层题库
+- [613 深度学习面试问题详解](613-shendu-xuexi-xiangjie.md) — 激活函数到 Transformer 到生成模型的「为什么」
+- [614 CV/NLP/强化学习题库](614-cv-nlp-rl-tiku.md) — 三个方向各自的专项高频骨架
+- [615 院校真题与考核特点](615-yuanxiao-zhenti.md) — 五类考核风格与「这题在筛什么」
+- [616 英文面试指南](616-yingwen-mianshi.md) — 六大类问题的可背模板与即兴骨架
+- [617 智力题与面试技巧总论](617-zhiyu-ti-yu-jiqiao.md) — 智力题十种套路与从题库到表达的转换
